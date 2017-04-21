@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CadCalculator</string>
+    <string name="text_sector_area_calcultor">扇形区域计算</string>
+    <string name="text_center_y">基点纵坐标</string>
+    <string name="text_center_x">基点横坐标</string>
+    <string name="text_x">目标横坐标</string>
+    <string name="text_y">目标纵坐标</string>
+    <string name="text_target_x">目标横坐标</string>
+    <string name="text_target_y">目标纵坐标</string>
+    <string name="text_per_distance">距离每增加</string>
+    <string name="text_height_increase">标高增加</string>
+    <string name="text_height_unit">m</string>
+    <string name="tv_calcultor_results">计算结果</string>
+    <string name="text_height_result">高度</string>
+    <string name="text_radius_result">半径</string>
+    <string name="text_block_area_calcultor">块状区域计算</string>
+    <string name="text_calcultor">计算</string>
+    <string name="text_center_z">基点高度</string>
+</resources>

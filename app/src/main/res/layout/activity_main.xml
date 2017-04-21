@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/view_margin"
+    android:orientation="vertical"
+    tools:context="com.naruto.cadcalculator.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_area_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_sector_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_sector_area_calcultor"/>
+
+        <RadioButton
+            android:id="@+id/rb_block_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:text="@string/text_block_area_calcultor"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_center_x"/>
+
+        <EditText
+            android:id="@+id/et_start_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_center_x"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_start_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:gravity="center_vertical"
+            android:text="@string/text_center_y"/>
+
+        <EditText
+            android:id="@+id/et_start_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_center_y"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start_z"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_center_z"/>
+
+        <EditText
+            android:id="@+id/et_start_z"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_weight="1"
+            android:hint="@string/text_center_z"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_start_height_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_height_unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_target_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_target_x"/>
+
+        <EditText
+            android:id="@+id/et_target_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_target_x"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_target_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:gravity="center_vertical"
+            android:text="@string/text_target_y"/>
+
+        <EditText
+            android:id="@+id/et_target_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_target_y"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_per_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_per_distance"/>
+
+        <EditText
+            android:id="@+id/et_per_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_per_distance"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_distance_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_height_unit"/>
+
+        <TextView
+            android:id="@+id/tv_height_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:gravity="center_vertical"
+            android:text="@string/text_height_increase"/>
+
+        <EditText
+            android:id="@+id/et_height_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:hint="@string/text_height_increase"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/tv_height_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/text_height_unit"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_calculte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_calcultor"/>
+
+    <TextView
+        android:id="@+id/tv_calcultor_results"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginStart="@dimen/view_margin"
+        android:text="@string/tv_calcultor_results"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_height_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="@string/text_height_result"/>
+
+        <TextView
+            android:id="@+id/tv_radius_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            tools:text="@string/text_radius_result"/>
+    </LinearLayout>
+</LinearLayout>
